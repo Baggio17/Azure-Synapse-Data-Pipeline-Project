@@ -18,6 +18,7 @@ Azure Synapse Analytics is a leading solution for unified analytics. This projec
 **Project Workflow**
 
 **1. Dataset and Tools Used**
+
 Dataset: Tokyo 2021 Olympics (Athletes, Coaches, Gender Entries, Medals, Teams)
 
 **2. Tools:**
