@@ -39,7 +39,7 @@ Step 4: Use Power BI to visualize insights from the loaded data.
 
 **Step-by-Step Implementation**
 
-Step 1: Azure Data Lake Gen2 Setup
+**Step 1: Azure Data Lake Gen2 Setup**
 
 Set up Azure Data Lake Gen2 for scalable and secure storage.
 
@@ -47,7 +47,7 @@ Configured a container named "source".
 
 Uploaded the 5 dataset files (Athletes.csv, Coaches.csv, EntriesGender.csv, Medals.csv, Teams.csv) to the container.
 
-Step 2: Azure Synapse Workspace and SQL Pool
+**Step 2: Azure Synapse Workspace and SQL Pool**
 
 Created Synapse Workspace:
 
@@ -55,7 +55,7 @@ Set up the workspace and linked it to the storage account.
 
 Created a dedicated SQL Pool for high-performance querying and storage.
 
-Step 3: Table Creation in SQL Pool
+**Step 3: Table Creation in SQL Pool**
 
 Defined and executed SQL scripts to create tables for each dataset:
 
@@ -69,7 +69,7 @@ CREATE TABLE [dbo].[AthletesOlympics] (
 
 (Repeated for all datasets: Coaches, EntriesGender, Medals, Teams)
 
-Step 4: Data Pipeline in Synapse
+**Step 4: Data Pipeline in Synapse**
 
 In Synapse Studio, created a new pipeline named "Ingesting Athlete Data".
 
@@ -89,7 +89,7 @@ I chose to clone the pipeline and replicate the process for the remaining files 
 
 Used Power BI Desktop to connect to Synapse SQL Pool and access the tables.
 
-Created Dashboards:
+**Created Dashboards:**
 
 I Built interactive dashboards to analyze:
 
@@ -99,11 +99,11 @@ Gender distribution across events
 
 Athlete performance trends
 
-Published Dashboard:
+**Published Dashboard:**
 
 I Published the dashboard for easy sharing and access via Azure Synapse Studio.
 
-Results and Outputs
+**Results and Outputs**
 
 SQL Tables: Data from all five datasets ingested into Synapse SQL Pool.
 
