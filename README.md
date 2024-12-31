@@ -31,6 +31,8 @@ Azure Synapse Analytics (SQL Pools, Pipelines, Integration with Power BI)
 Azure Data Lake Storage Gen2
 
 Power BI Desktop
+![resources](https://github.com/user-attachments/assets/abfb2ba8-81e6-4018-b366-a84836dff027)
+
 
 **2. Project Architecture**
 
@@ -41,6 +43,8 @@ Step 2: Build an Azure Synapse pipeline to load data into Synapse Dedicated SQL 
 Step 3: Create SQL tables for the dataset and transform data for reporting.
 
 Step 4: Use Power BI to visualize insights from the loaded data.
+![Screenshot (98)](https://github.com/user-attachments/assets/1cfa9ed7-7331-4ca5-908c-f08bcaf14162)
+
 
 ## **Step-by-Step Implementation**
 
@@ -76,35 +80,26 @@ CREATE TABLE [dbo].[AthletesOlympics] (
 
 In Synapse Studio, created a new pipeline named "Ingesting Athlete Data".
 
-Configured Source:
-
 Used Copy Data activity to connect to Azure Data Lake Gen2 and select files.
-
-Configured Sink:
 
 Connected to the Synapse SQL Pool and mapped each file to its respective table.
 
 Tested the pipeline: using the Debug option to ensure data is ingested into the SQL tables.
 
 Cloned the pipeline to replicate the process for the remaining files but I could have used the "Get Metadata" Activity + "ForEach Activity" + "Copy Data" Activity to dynamically copy the remaining files.
+![pipelines](https://github.com/user-attachments/assets/9d83efaf-5918-4f08-b3a9-6f65139b87f6)
+
 
 **Step 5: Power BI Visualization**
 
 Used Power BI Desktop to connect to Synapse SQL Pool and access the tables.
 
-Created Dashboards:
-
-Built interactive dashboards to analyze:
-
-Country-wise medal counts
-
-Gender distribution across events
-
-Athlete performance trends
-
-Published Dashboard:
+Built interactive dashboards to analyze.
 
 Published the dashboard for easy sharing and access via Azure Synapse Studio.
+![powerbi 2](https://github.com/user-attachments/assets/7b55de83-3b9e-4e3d-bc22-c314a42b2218)
+![powerbi 1](https://github.com/user-attachments/assets/e279bb8b-ceb5-4115-9252-3a5f3864cba0)
+![power bi 3](https://github.com/user-attachments/assets/829a409e-cf07-41ac-9782-18133cf3613f)
 
 **Results and Outputs**
 
@@ -116,7 +111,6 @@ Medal distribution by country and event.
 
 Gender representation in the Olympics.
 
-Athlete and team statistics.
 
 **Conclusion**
 
